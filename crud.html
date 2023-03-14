@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CRUD Blog</title>
+        <style>
+            #alertDialog {
+                margin-top:10%;
+                padding-left:10%;
+                padding-right:10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Blog posts</h1>
+        <ul id="blog">    
+        </ul>
+        <button>Add Blog</button>
+        <dialog id="createDialog">
+            <p>Title</p>
+            <input type="text">
+            <p>Date</p>
+            <input type="date">
+            <p>Summary</p>
+            <input type="text">
+            <button>Cancel</button>
+            <button>Save</button>
+        </dialog>
+        <dialog id="confirmDialog">
+            <p>Delete?</p>
+            <button>Cancel</button>
+            <button>Confirm</button>
+        </dialog>
+        <dialog id="editDialog">
+            <p>Title</p>
+            <input type="text">
+            <p>Date</p>
+            <input type="date">
+            <p>Summary</p>
+            <input type="text">
+            <button>Cancel</button>
+            <button>Save</button>
+        </dialog>
+
+        <script type="module" src="blog.js">
+
+        </script>
+    </body>
+</html>
